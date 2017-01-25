@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title> Bolilerplate code </title>
+        <link href= "" type="txt/css" rel="stylesheet">
+    </head>
+
+    <body>
+
+
+
+
+    </body>
+
+</html>

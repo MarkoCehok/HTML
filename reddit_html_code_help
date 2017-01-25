@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style type="text/css">
+        svg {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            z-index: -1;
+        }
+
+        #text {
+            font-family: 'Roboto', sans-serif;
+            position: absolute;
+            color: white;
+            top: 33%;
+            left: 32%;
+            font-size: 800%;
+        }
+        #waterdropBack {
+            fill: rgba(57, 181, 74, 0.9);
+        }
+
+        #waterdrop {
+            background-color: white;
+            transition: all 0.5s ease;
+            fill: rgba(1, 173, 237, 0.7);
+        }
+
+        #waterdrop:hover {
+            fill: rgba(1, 173, 237, 1);
+        }
+
+        .clip {
+            animation-name: slide;
+            animation-duration: 4s;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateY(33%);
+            } to {
+                transform: translateY(7.2%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sec">
+        <svg width="50%" viewbox="0 0 33 45">
+            <path id="waterdropBack"
+                d="M15 3
+                Q16.5 6.8 25 18
+                A12.8 12.8 0 1 1 5 18
+                Q13.5 6.8 15 3z"/>
+
+            <clipPath id="circle-clip">
+                <path class="clip"
+                    d="M101.807,123.37c10-0.352,18.193,5.401,18.193,5.401V0H0v128.771c0,0,9.701-5.227,
+                    17.069-5.227s10.464,6.34,20.877,6.314c10.175,0,12.703-4.209,22.053-4.209s11.981,
+                    5.438,20.578,5.438S91.807,123.722,101.807,123.37z">
+                </path>
+            </clipPath>
+            <g clip-path="url(#circle-clip)">
+                <path id="waterdrop"
+                    d="M15 3
+                    Q16.5 6.8 25 18
+                    A12.8 12.8 0 1 1 5 18
+                    Q13.5 6.8 15 3z"
+                    />
+            </g>
+            <p id="text">
+                83.2%
+            </p>
+        </svg>
+    </div>
+</body>
+</html>
