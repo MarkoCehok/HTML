@@ -23,33 +23,54 @@
             <div class="nav_bar">
                     <ul>
                         <li >
-                            <a class="current" href="D:\CODING\HTML\Zagorje kamen\main.html">Početna</a>
+                            <a href="D:\CODING\HTML\Zagorje kamen\main.html">Početna</a>
                         </li>
                         <li>
                             <a href="D:\CODING\HTML\Zagorje kamen\proizvodi.html">Proizvodi</a>
                         </li>
                         <li>
-                            <a href="D:\CODING\HTML\Zagorje kamen\O_Nama.html">O Nama</a>
+                            <a href="D:\CODING\HTML\Zagorje kamen\O_nama.html">O Nama</a>
                         </li>
                         <li>
-                            <a href="D:\CODING\HTML\Zagorje kamen\Kontakt.html">Kontakt</a>
+                            <a class="current" href="D:\CODING\HTML\Zagorje kamen\Kontakt.html">Kontakt</a>
                         </li>
                     </ul>
              </div>
-             <div class="mainText">
-                 <h3>Neke aktualnosti, početna strana Naslov </h3>
-                 <p>Tekst ovdje........<br/>
-                     @<br/>
-                     @<br/>
-                     @<br/>
-                     @<br/>
-                     @<br/>
-                     @<br/>
-                     @<br/>
-
+             <div class="KontaktInfo">
+                 <h3> Proizvodnja Kalcita</h3>
+                 <p>Kontakt osoba:<span class="osoba"> Đuro Širham</span><br/>
+                 Broj GSM-a: <span class="gsm">098/446-429</span><br/>
+                 Marčan, 42207 Vinica<br/>
+                 tel: 042/722-130<br/>
+                 fax (1): 042/722-130<br/>
+                 fax (2): 042/211-187<br/>
                  </p>
+                
+                 
              </div>
+             <!--<h3>My Google Maps Demo</h3>-->
+            <div id="map"></div>
+            <!-- Rest of the page-->
+             
         </div>
+
+        <!-- Maps JavaScript API-->
+        <script>
+                function initMap() {
+                var uluru = {lat: 46.332236, lng: 16.144392};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: uluru
+                });
+                var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+                });
+                }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGsct7LYQqMMgPw-LJM4S_khW2ev68y2Q&callback=initMap">
+            </script>
 
     </body>
 </html>

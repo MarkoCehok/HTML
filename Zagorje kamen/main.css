@@ -1,7 +1,224 @@
-.CSS
-
 *{
     border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+/*overflow: scroll;*/
+}
+
+/*Main page- Početna*/
+header{
+    vertical-align: middle;
+    padding: 0;
+    margin: 5px 5px 0px 5px;
+    background-color: rgba(150, 150, 150, 0.5)
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.kamen{
+    font-family: 'Kumar One', cursive;
+    color: rgba(247, 236, 150, 0.8);
+}
+/* Extra
+.doo{
+    color: rgba(0, 0, 2, 0.7);
+}
+*/
+.page_title {
+    display: inline-block;
+    padding: 0;
+    max-height: 150px;
+    max-height: 6vw;
+    width: 84%;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    font-size: 450%;
+    font-size: 4vw;
+    font-weight: bold;
+    color: rgba(0, 0, 2, 0.7) ;
+    margin: 10px 10px 10px 0;
+    
+}
+
+.title img{
+    display: inline-block;
+    max-height: 10vw;
+    max-width: 10%;
+    max-width: 5vw;
+    margin: 10px;
+    padding: 0;
+}
+.title{
+    line-height: 7vw;
+    max-height: 150px;
+    max-height: 10vw;
+   background-color: #e68128 ;
+   border-color: #B0631F;
+}
+
+.title>*{
+    vertical-align: middle;
+    line-height: normal;
+   text-align: center;
+}
+
+.all{
+    text-align: center;
+    background-color: rgba(0, 0, 10, 0.5) ;
+    overflow: hidden;
+    margin: auto;
+    max-width: 1500px;
+    /*max-height: 100%;*/
+}
+
+.nav_bar{
+    border-radius: 0.7vw;
+    background-color: rgba(171, 96, 30, 0.9);
+    text-align: center;
+    max-width: 1500px;
+    max-height: 4vw;
+    margin: 0px 5px 5px 5px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+     0px 10px 20px rgba(0,0,0,0.15),
+     0px 20px 20px rgba(0,0,0,0.05),
+     0px 30px 20px rgba(0,0,0,0.05);
+}
+
+.nav_bar ul{
+    
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav_bar li{
+    
+    font-family: 'Kumar One', cursive;
+    color: rgba(247, 236, 150, 0.8);
+    padding: 0;
+    margin: 5px 20px 2px 10px;
+    display: inline-block;
+    font-size: 30px;
+    font-size: 1.5vw;
+}
+
+.nav_bar a{
+    text-decoration: none;
+    color: rgba(247, 236, 150, 0.8);
+}
+
+/*change color on mouse hover*/
+   .nav_bar a:hover {
+    background-color: rgba(0, 0, 10, 0.5);
+    color: white;
+}
+
+.current {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 
+/*Kontakt Info page*/
+
+.KontaktInfo {
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+    font-family:  Times New Roman , 'Audiowide', cursive;
+    font-size: 26px;
+    font-size: 1.25vw;
+    max-width: 30vw;
+    padding: 0.4vw;
+    margin: 0.4vw;
+    background-color: rgba(247, 236, 150, 0.8);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.20),
+     0px 10px 20px rgba(0,0,0,0.15),
+     0px 20px 20px rgba(0,0,0,0.15),
+     0px 30px 20px rgba(0,0,0,0.15);
+}
+
+.KontaktInfo p{
+    line-height: 2.5vw;
+    margin: 0.6vw;
+    
+    }
+
+.gsm, .osoba{
+    font-weight: bold;
+}
+
+#map{
+    margin: 0.4vw;
+    display: inline-block;
+    height: 30vw;
+    width: 40vw;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+     0px 10px 20px rgba(0,0,0,0.05),
+     0px 20px 20px rgba(0,0,0,0.05),
+     0px 30px 20px rgba(0,0,0,0.05);
+}
+
+.proizvodi h3,.proizvodi ol,.proizvodi h4{
+    display: inline-block;
+    margin: 0.4vw 45vw 0.4vw 0.4vw ;
+    text-align: left;
+    font-size: 26px;
+    font-size: 2vw;
+    max-width: 30vw;
+    padding: 0.2vw;    
+}
+.proizvodi ol{
+    margin: 0.4vw 45vw 0.4vw 2vw;
+    padding: 0.2vw;
+    
+
+}
+.proizvodi h4{
+    display: inline-block;
+    margin: 0.4vw 0.4vw 0.4vw 45vw ;
+}
+
+.proizvodi table{
+    display: inline-block;
+    margin: 0.4vw 0.4vw 0.4vw 45vw ;
+    text-align: left;
+    font-size: 26px;
+    font-size: 1.25vw;
+    max-width: 40vw;
+    border-collapse: collapse;
+    background-color: #FFFFFF ;
+    border: 0.2vw solid rgba(247, 236, 150, 1);
+    border-bottom: 0.4vw solid rgba(247, 236, 150, 1);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+     0px 10px 20px rgba(0,0,0,0.05),
+     0px 20px 20px rgba(0,0,0,0.05),
+     0px 30px 20px rgba(0,0,0,0.05);
+}
+
+.proizvodi th{
+    background-color: #e68128;
+    height: 2.5vw;
+    text-align: center;    
+}
+
+.proizvodi td{
+    padding: 0.2vw;
+}
+
+.proizvodi tbody tr:nth-child(odd) {
+  background: #eee;
+}
+
+
+
+.mainText, .aboutUs {
+    padding: 0.2vw;
+    margin: 0.4vw auto;
+    width: 50vw;
+    font-family: sans-serif, serif, 'Times New Roman!';
+    font-family: 'Audiowide', cursive;
+    font-size: 2.2vw;
+    font-size-adjust: 26px;
+}
