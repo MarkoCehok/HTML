@@ -1,0 +1,138 @@
+/*Marko CEhok CSS*/
+*{
+    /*border: 1px solid rgba(0, 0, 0, 0.3);*/
+    box-sizing: border-box;
+/*overflow: scroll;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Oleo Script', cursive;*/
+}
+
+body {
+    text-align: center;
+    background: url(Pictures/DSC05619.JPG) no-repeat center;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.main{
+    background-color:rgba(255, 255, 255, 0.4);
+    /*min-height: 100%;*/
+}
+
+header {
+    font-family: 'Kavoon', cursive;
+    display: inline-block;
+    background-color:rgba(255, 255, 255, 0.4);
+    margin:0;
+    padding: 0;
+    text-align: center;
+    min-height: 6.5vw;
+    width: 100%;
+}
+
+header h1{
+    
+    display: inline-block;
+    font-size: 3.5vw;
+    margin: 0;
+    padding: 1vw;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+.MC{
+    font-family: 'Kaushan Script', cursive;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+.face{
+    display: inline-block;
+    position: absolute;
+    right: 4.5vw;
+    margin: 0.5vw auto;
+    padding: 0;
+    max-width: 15%;
+    min-height: 15vw;
+    border-radius: 80%;
+}
+
+.MC h3{
+    text-decoration: underline;
+    margin: 0.2vw;
+    display: inline-block;
+    width: 50%;
+    font-size: 2vw;
+    min-height: 4vw;
+}
+
+.MC p{
+    display: inline-block;
+    width: 50%;
+    font-size: 1.5vw;
+    min-height: 10vw;
+}
+.bold{
+    font-weight: bold;
+}
+
+.MC>*{
+    vertical-align: middle;
+}
+
+.MC h5{
+    font-family: 'Kavoon', cursive;
+    display: inline-block;
+    margin: 0.2vw auto;
+    width: 50%;
+    font-size: 2vw;
+    min-height: 2.2vw;
+    text-decoration: underline;
+}
+
+.MC h4{
+    font-family: 'Kavoon', cursive;
+    display: inline-block;
+    margin: 0.2vw auto;
+    width: 50%;
+    font-size: 2vw;
+    min-height: 2.2vw;
+    text-decoration: underline;
+}
+
+.Work li{
+    font-size: 1.5vw;
+    min-height: 2vw;
+    list-style-type: none;
+    min-width: 20vw;
+    margin: 0.1vw;
+}
+
+.Work p{
+    padding: 0;
+    margin: 0.1vw;
+    font-size: 1.5vw;
+    min-height: 2vw;
+}
+
+.underl{
+    font-family: 'Kavoon', cursive;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#projects{
+    font-family: 'Kavoon', cursive;
+    font-size: 1.5vw;
+    min-height: 2vw;
+}

@@ -1,59 +1,87 @@
 *{
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 0, 0, 0.3);
     box-sizing: border-box;
 /*overflow: scroll;*/
 }
 
 /*Main page- Početna*/
 header{
-    vertical-align: middle;
     padding: 0;
-    margin: 5px 5px 0px 5px;
-    background-color: rgba(150, 150, 150, 0.5)
+    margin: 0;
+    /*background-color: rgba(150, 150, 150, 0.5)*/
 }
 
 body{
+    /*background: url(pictures/Kamenolom.png) no-repeat center;*/
+    /*background-size: cover;*/
+    background-color: rgba(60, 69, 84, 0.8);
+    
     padding: 0;
     margin: 0;
 }
 
+/*Read more about Media Queries*/
+@media (min-width: 1200px) {
+  
+  /*html {
+    font-size: 0.5px; }
+*/
+  header, body > * {
+    width: 1300px !important;
+    margin: auto !important;
+    }
+    .mainText >* {
+        font-size: 2.2vw;
+    } 
+    }
+
+/*
+    @media handheld and (min-width: 700px) {
+    header, body > * {
+    width: 700px !important;
+    margin: auto !important;
+
+    } }
+*/
 .kamen{
     font-family: 'Kumar One', cursive;
     color: rgba(247, 236, 150, 0.8);
 }
-/* Extra
-.doo{
-    color: rgba(0, 0, 2, 0.7);
-}
-*/
+
+
 .page_title {
     display: inline-block;
     padding: 0;
-    max-height: 150px;
-    max-height: 6vw;
-    width: 84%;
+    min-height: 150px;
+    min-height: 6vw;
     font-family: 'Audiowide', cursive;
     text-align: center;
     font-size: 450%;
     font-size: 4vw;
     font-weight: bold;
     color: rgba(0, 0, 2, 0.7) ;
-    margin: 10px 10px 10px 0;
+    margin: 1vw 1vw 0vw 0.5vw;
     
+}
+
+.title h3{
+    color: rgba(0, 0, 2, 0.7) ;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 2.5vw;
+    padding: 0;
+    margin: 0vw;
 }
 
 .title img{
     display: inline-block;
-    max-height: 10vw;
     max-width: 10%;
-    max-width: 5vw;
-    margin: 10px;
+    max-width: 8vw;
+    margin: 0.5vw 0vw 0.5vw 0.5vw;
     padding: 0;
 }
-.title{
-    line-height: 7vw;
-    max-height: 150px;
-    max-height: 10vw;
+.title{    
+    min-height: 150px;
+    min-height: 10vw;
    background-color: #e68128 ;
    border-color: #B0631F;
 }
@@ -65,21 +93,22 @@ body{
 }
 
 .all{
+    background-color: rgba(124, 144, 152, 0.8);
     text-align: center;
-    background-color: rgba(0, 0, 10, 0.5) ;
     overflow: hidden;
     margin: auto;
-    max-width: 1500px;
-    /*max-height: 100%;*/
+    min-width: 10%;
+    min-height: 100%;
 }
 
 .nav_bar{
+
     border-radius: 0.7vw;
     background-color: rgba(171, 96, 30, 0.9);
     text-align: center;
-    max-width: 1500px;
-    max-height: 4vw;
-    margin: 0px 5px 5px 5px;
+    min-width: 10%;
+    min-height: 4vw;
+    margin: 0vw;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
      0px 10px 20px rgba(0,0,0,0.15),
      0px 20px 20px rgba(0,0,0,0.05),
@@ -87,21 +116,21 @@ body{
 }
 
 .nav_bar ul{
-    
+
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
 
 .nav_bar li{
-    
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
     font-family: 'Kumar One', cursive;
     color: rgba(247, 236, 150, 0.8);
-    padding: 0;
-    margin: 5px 20px 2px 10px;
+    padding: 0 0.4vw 0 0.4vw;
+    margin: 0.3vw 0.4vw 0.3vw 0.4vw;
     display: inline-block;
     font-size: 30px;
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 
 .nav_bar a{
@@ -126,9 +155,9 @@ body{
     vertical-align: top;
     display: inline-block;
     text-align: left;
-    font-family:  Times New Roman , 'Audiowide', cursive;
+    font-family: 'Hammersmith One', sans-serif;
     font-size: 26px;
-    font-size: 1.25vw;
+    font-size: 1.9vw;
     max-width: 30vw;
     padding: 0.4vw;
     margin: 0.4vw;
@@ -140,7 +169,7 @@ body{
 }
 
 .KontaktInfo p{
-    line-height: 2.5vw;
+    line-height: 3vw;
     margin: 0.6vw;
     
     }
@@ -160,32 +189,51 @@ body{
      0px 30px 20px rgba(0,0,0,0.05);
 }
 
-.proizvodi h3,.proizvodi ol,.proizvodi h4{
+/*Proizvodi page edits*/
+
+.proizvodi>*{
+    vertical-align: top;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.str1{
+    max-width: 40%;
     display: inline-block;
-    margin: 0.4vw 45vw 0.4vw 0.4vw ;
+}
+.str2{
+    max-width: 40%;
+    display: inline-block;
+}
+
+.proizvodi h3,.proizvodi ol,.proizvodi h4{
+    
+    display: inline-block;
     text-align: left;
     font-size: 26px;
-    font-size: 2vw;
-    max-width: 30vw;
+    font-size: 2.3vw;
+    min-width: 30vw;
     padding: 0.2vw;    
+    margin: 0.4vw;
 }
 .proizvodi ol{
-    margin: 0.4vw 45vw 0.4vw 2vw;
-    padding: 0.2vw;
-    
-
-}
-.proizvodi h4{
     display: inline-block;
-    margin: 0.4vw 0.4vw 0.4vw 45vw ;
+    margin: 0.4vw 8vw 0.4vw 2vw;
+    padding: 0.2vw;
 }
+
+.proizvodi h4{
+    
+    margin: 0.4vw 0.4vw 0.4vw 2vw ;
+}
+
+
 
 .proizvodi table{
     display: inline-block;
-    margin: 0.4vw 0.4vw 0.4vw 45vw ;
+    margin: 0.4vw 0.4vw 0.4vw 0.4vw ;
     text-align: left;
     font-size: 26px;
-    font-size: 1.25vw;
+    font-size: 1.5vw;
     max-width: 40vw;
     border-collapse: collapse;
     background-color: #FFFFFF ;
@@ -211,14 +259,31 @@ body{
   background: #eee;
 }
 
+/*about us and index page*/
 
-
-.mainText, .aboutUs {
-    padding: 0.2vw;
-    margin: 0.4vw auto;
-    width: 50vw;
+.mainText {
+    text-align: left;
+    padding: 0.2vw 0.2vw 0.2vw 5vw;
+    margin: auto;
+    width: 80vw;
     font-family: sans-serif, serif, 'Times New Roman!';
-    font-family: 'Audiowide', cursive;
-    font-size: 2.2vw;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 3.2vw;
     font-size-adjust: 26px;
+}
+
+.mainText h3{
+    font-family: 'Audiowide', cursive;
+    color: rgba(36, 24, 23, 0.8);
+    margin: 0;
+}
+.mainText p{
+    margin: 0;
+}
+
+.underl{
+    font-family: 'Audiowide', cursive;
+    color: rgba(36, 24, 23, 0.8);
+    text-decoration: underline;
+    font-weight: bold;
 }
