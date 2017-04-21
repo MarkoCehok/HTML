@@ -10,9 +10,14 @@
         <title>Zagorje Kamen</title>
         <meta name="robots" content="all"/>
 <!--bootstrap CSS & Javascript-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!--javascript file-->
+        <script type="text/javascript" src="javascript-test.js"></script>
+        <!--bootstarp-->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+        <!-- CSS file-->
         <link href="zKamen.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Audiowide|Hammersmith+One|Kumar+One" rel="stylesheet">
         <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
@@ -21,39 +26,41 @@
     </head>
     <body translate="no">
 
-        <div class="container">
-            
-                <div class="row head-pic ">
-                     <div class=" col-xs-12 col-sm-12 col-md-12">
+        <div class="container colo-container">
+            <!--header- Navbar-->
+                <div class="row colo  font-colo">
+                     <div class=" col-xs-12 col-sm-12 col-md-12 ">
             
                 <div class="text-center">
-                    <img class="img-responsive col-xs-3 col-sm-3 col-md-2" src="pictures/logo-homepage.png" alt="Zagorje-Kamen: Proizvodnja Kalcita"/>
-                    <h1 class="col-xs-9 col-sm-9 col-md-10">ZAGORJE <span class="kamen">Kamen</span><span class="doo"> d.o.o.</span></h1>
-                    <h3 class="col-xs-9 col-sm-9 col-md-9">Proizvodnja kalcitno-karbonatnog zrna i brašna</h3>
+                    <img class="img-responsive col-xs-3 col-sm-3 col-md-2 head-logo" src="pictures/logo-homepage.png" alt="Zagorje-Kamen: Proizvodnja Kalcita"/>
+                    <h1 class="col-xs-9 col-sm-9 col-md-10 head">ZAGORJE <span class="kamen">Kamen</span><span class="doo"> d.o.o.</span></h1>
+                    <h3 class="col-xs-9 col-sm-9 col-md-9 u-head">Proizvodnja kalcitno-karbonatnog zrna i brašna</h3>
                 </div>
                      </div>
-                     <div class="col-xs-12 col-sm-12 col-md-12">                
-            
-            <div class="text-center col-xs-2 col-xs-offset-3 col-sm-2 col-sm-offset-3 col-md-2 col-md-offset-3">
-                            <a href="index.html" type="button" class="btn btn-default btn-lg" role="button"><strong>Početna </strong></button></a>
+                </div>
+                <div class="row colo shadow">
+                     <div class="col-xs-12 col-sm-12 col-md-12 nav-color">
+                         <div class="text-center col-xs-2 col-xs-offset-3 col-sm-2 col-sm-offset-3 col-md-2 col-md-offset-3">
+                            <a id="triggerIndex" data-target="#pocetna" type="button" class="btn butt-colo" role="button"><strong>Početna </strong></a>
                             </div>
                             <div class="nav-bar text-center col-xs-2 col-sm-2 col-md-2 ">
-                            <a href="index.html" type="button" class="btn btn-default btn-lg" role="button"><strong>Proizvodi </strong></button></a>
+                            <a id="triggerProizvodi" data-target="#proizvodi" type="button" class="btn butt-colo" role="button"><strong>Proizvodi </strong></a>
                             </div>
                             <div class="nav-bar text-center col-xs-2 col-sm-2 col-md-2">
-                            <a href="index.html" type="button" class="btn btn-default btn-lg" role="button"><strong>Kontakt </strong></button></a>
+                                <!--testing out javascript togle page -->
+                            <a id="triggerKontakt" data-target="#kontakt" type="button" class="btn butt-colo" role="button" ><strong>Kontakt </strong></a>
                             </div>
                         
                         </div>
                     </div>
                     <!--Index page-->
-<div class="jumbotron">
+<div id="pocetna" class="jumbotron shadow colo-body">
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 ">
-             <div class="col-xs-7 col-sm-7 col-md-7">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+             <div class="col-xs-12 col-sm-10 col-md-10 col-center">
                  <h3>Zagorje Kamen d.o.o </h3>
                  <p>
-                     <span class="underl">Djelatnost: <br>Vađenje i oplemenjivanje kamena- vapnenac Vinicit.</span><br/>	   
+                     <span class="text-B-U">Djelatnost: <br>Vađenje i oplemenjivanje kamena - vapnenac Vinicit.</span><br/>	   
                     Proizvodnja kalcitnog brašna za prehranu stoke - stočne krede, <br/>	   
 	                Proizvodnja kalcita za poljoprivredu, <br/>   
 	                Proizvodnja kalcitnih punila.<br/>
@@ -66,44 +73,311 @@
                     <br/>
                     </p>
                     </div>
+                    <!--
                     <div class="col-xs-5 col-sm-5 col-md-5 ">
                         <img class="img-responsive align-self-center" src="pictures/251.jpg" alt="Zagorje-Kamen: Tvornica"/>
                     </div>
+                    -->
                     </div>
                     </div>
+
+                    <!-- Pictures Slideshow-->
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-10 col-md-10 col-center">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+                                <!--indicator-->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                </ol>
+
+                                <!--wrapper-->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="pictures/ZK69.jpg" alt="Zagorje-Kamen: Tvornica"/>
+                                        <!-- Caption here-->
+                                    </div>
+                                    <div class="item">
+                                        <img src="pictures/ZK72.jpg" alt="Zagorje-Kamen: Tvornica"/>
+                                        <!-- Caption here-->
+                                    </div>
+                                    <div class="item">
+                                        <img src="pictures/ZK54.jpg" alt="Zagorje-Kamen: Tvornica"/>
+                                        <!-- Caption here-->
+                                    </div>
+                                    <div class="item">
+                                        <img src="pictures/ZK58.jpg" alt="Zagorje-Kamen: Tvornica"/>
+                                        <!-- Caption here-->
+                                    </div>
+                                </div>
+                                <!--Controls of slide show-->
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                    </a>
+                                     <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                         <span class="sr-only">Next</span>
+                                    </a>
+                            </div><!--End of Carusel-->
+                            
+                        </div>
+                    </div><!--End of new ROW-->
+
             </div>
 <!-- Proizvodi page-->
-<div class="jumbotron ">
+<div id="proizvodi" class="jumbotron shadow colo-body">
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-             <ul class="col-xs-10 col-xs-offset-2 col-sm-8 col-sm-offset-4 col-md-5 col-md-offset-5">
-            <!--Robot series-->
-            <li class="text-info"><button type="button" class="btn btn-info btn-lg btn-block" data-toggle="collapse" data-target="#brasno" aria-expanded="false" aria-controls="brasno">
-                Karbonatno- Kalcijevo brašno (stočna kreda):</button> </li>              
+        <!--opis proizvoda-->
+        <div class="col-xs-12 col-sm-6 col-md-6 text-center">
+            <h2>Zagorje kamen proizvodi iz kalcitnog kamena (Vinicita) robu za dvije osnovne primjene:<h2>
+            <h3 class="no-margin text-B-U">1. Dodatak hrani za životinje</h3>
+            <p> - Koristi se kalcitno karbonatno brašno (stočna kreda)
+             i sitno zrnati kalcit</p>
+            <h3 class="no-margin text-B-U">2. Kalcifikacija tla - zemlje</h3>
+            <p > - Koristi se proizvod pogodan kupcu (kalcitno karbonatno brašno i zrno obje veličine)</p>
+            <h3><b>Proizvodi se pakiraju po 25, 50, 1000 kg.<br>Mogučnost punjenja rinfuze iz silosa.</b></h3>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <h3>Detaljnije o pojedinom proizvodu:</h3>
+            <!--Karbonatno- Kalcijevo brašno (stočna kreda-->
+            <button type="button" class="btn btn-info btn-lg btn-block butt-wrap" data-toggle="collapse" data-target="#brasno" aria-expanded="false" aria-controls="brasno">
+                Karbonatno - Kalcijevo brašno (stočna kreda):</button>            
               <div class="collapse " id="brasno">
+                  <div class="col-xs-12 col-sm-12 col-md-12">
+                      <h3 class="col-xs-12 col-sm-12 col-md-12">Prema analizi proizvod sadrži:</h4>
+                      <div class="col-xs-12 col-sm-12 col-md-12">
+                 <table class="table table-bordered table-striped table-hover">
+                     <tr>
+                         <th scope="col">Kemijski Sastav</th>
+                         <th scope="col">Količina</th>
+                     </tr>
+                     <tr>
+                        <td>CaCO3</td>
+                        <td>min. 90.00%</td>
+                     </tr>
+                     <tr>
+                        <td>Ca<!--<sup>2</sup>--></td>
+                        <td>min. 36.00%</td>
+                     </tr>
+                     <tr>
+                        <td>SiO2MgO, Al2O3+neotopivo u HCL</td>
+                        <td>max 3.30%</td>
+                     </tr>
+                     <tr>
+                        <td>Fosfor(P)</td>
+                        <td>min. 22.00</td>
+                     </tr>
+                     <tr>
+                        <td>Olovo(Pb)</td>
+                        <td>0.02 mg/kg</td>
+                     </tr>
+                     <tr>
+                        <td>Živa(Hg)</td>
+                        <td><0.01 mg/kg</td>
+                     </tr>
+                     <tr>
+                        <td>Kadimij(Cd)</td>
+                        <td><0.01 mg/kg</td>
+                     </tr>
+                     <tr>
+                        <td>Arsen(As)</td>
+                        <td><0.01 mg/kg</td>
+                     </tr>
+                     <tr>
+                        <td>Vlaga</td>
+                        <td>do 2.00%</td>
+                     </tr>
+                     <tr>
+                        <td>pH vrijednost</td>
+                        <td>do 9.00</td>
+                     </tr>
+                 </table>
+                 </div>
+                  </div>
               </div>
-
-              <li class="text-info "><button type="button" class="btn btn-info btn-lg btn-block" data-toggle="collapse" data-target="#sitno" aria-expanded="false" aria-controls="sitno">
-                  Sitno zrnati Kalcij:</button> </li>              
+              <!--Karbonatno- Kalcijevo sitno-->
+              <button type="button" class="btn btn-info btn-lg btn-block" data-toggle="collapse" data-target="#sitno" aria-expanded="false" aria-controls="sitno">
+                  Sitno zrnati Kalcij:</button>             
               <div class="collapse " id="sitno">
+                  <div class="col-xs-12 col-sm-12 col-md-12">
+                      <h3 class="col-xs-12 col-sm-12 col-md-12">Prema analizi proizvod sadrži:</h4>
+                      <div class="col-xs-12 col-sm-12 col-md-12">
+                 <table class="table table-bordered table-striped table-hover">
+                     <tr>
+                         <th scope="col">Kemijski Sastav</th>
+                         <th scope="col">Količina</th>
+                     </tr>
+                     <tr>
+                        <td>CaCO3</td>
+                        <td>min. 90.00%</td>
+                     </tr>
+                     <tr>
+                        <td>Ca<!--<sup>2</sup>--></td>
+                        <td>min. 36.00%</td>
+                     </tr>
+                     <tr>
+                        <td>SiO2MgO, Al2O3+neotopivo u HCL</td>
+                        <td>max 3.30%</td>
+                     </tr>
+                     <tr>
+                        <td>Fosfor(P)</td>
+                        <td>min. 22.00</td>
+                     </tr>
+                     <tr>
+                        <td>Olovo(Pb)</td>
+                        <td>0.02 mg/kg</td>
+                     </tr>
+                     <tr>
+                        <td>Živa(Hg)</td>
+                        <td><0.01 mg/kg</td>
+                     </tr>
+                     <tr>
+                        <td>Kadimij(Cd)</td>
+                        <td><0.01 mg/kg</td>
+                     </tr>
+                     <tr>
+                        <td>Arsen(As)</td>
+                        <td><0.01 mg/kg</td>
+                     </tr>
+                     <tr>
+                        <td>Vlaga</td>
+                        <td>do 2.00%</td>
+                     </tr>
+                     <tr>
+                        <td>pH vrijednost</td>
+                        <td>do 9.00</td>
+                     </tr>
+                 </table>
+                 </div>
+                  </div>
               </div>
-
-              <li class="text-info"><button type="button" class="btn btn-info btn-lg btn-block " data-toggle="collapse" data-target="#krupno" aria-expanded="false" aria-controls="krupno">
-                  Krupno zrnati Kalcij:</button> </li>              
+              <!--Karbonatno- Kalcijevo krupno-->
+              <button type="button" class="btn btn-info btn-lg btn-block " data-toggle="collapse" data-target="#krupno" aria-expanded="false" aria-controls="krupno">
+                  Krupno zrnati Kalcij:</button>             
               <div class="collapse " id="krupno">
+                  <div class="col-xs-12 col-sm-12 col-md-12">
+                      <h3 class="col-xs-12 col-sm-12 col-md-12">Prema analizi proizvod sadrži:</h4>
+                      <div class="col-xs-12 col-sm-12 col-md-12">
+                 <table class="table table-bordered table-striped table-hover">
+                     <tr>
+                         <th scope="col">Kemijski Sastav</th>
+                         <th scope="col">Količina</th>
+                     </tr>
+                     <tr>
+                        <td>CaCO3</td>
+                        <td>min. 90.00%</td>
+                     </tr>
+                     <tr>
+                        <td>Ca<!--<sup>2</sup>--></td>
+                        <td>min. 36.00%</td>
+                     </tr>
+                     <tr>
+                        <td>SiO2MgO, Al2O3+neotopivo u HCL</td>
+                        <td>max 3.30%</td>
+                     </tr>
+                     <tr>
+                        <td>Fosfor(P)</td>
+                        <td>min. 22.00</td>
+                     </tr>
+                     <tr>
+                        <td>Olovo(Pb)</td>
+                        <td>0.02 mg/kg</td>
+                     </tr>
+                     <tr>
+                        <td>Živa(Hg)</td>
+                        <td><0.01 mg/kg</td>
+                     </tr>
+                     <tr>
+                        <td>Kadimij(Cd)</td>
+                        <td><0.01 mg/kg</td>
+                     </tr>
+                     <tr>
+                        <td>Arsen(As)</td>
+                        <td><0.01 mg/kg</td>
+                     </tr>
+                     <tr>
+                        <td>Vlaga</td>
+                        <td>do 2.00%</td>
+                     </tr>
+                     <tr>
+                        <td>pH vrijednost</td>
+                        <td>do 9.00</td>
+                     </tr>
+                 </table>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+        </div>
 
-              </ul>
+        <!--Kontakt Page-->
+            <div id="kontakt" class="jumbotron shadow colo-body">
+                <div class="row">
+                    <div class="col-xs-2 col-sm-2 col-md-2">
+                       <!-- <h3>Radno vrijeme:</h3>
+                        <h4>Ponedjeljak - Petak : 7:00 - 15:00</h4>-->
+                       <!-- <img class="img-responsive" src="pictures/logo-homepage.png" alt="Zagorje-Kamen: Proizvodnja Kalcita"/> -->
+                    </div>
+                    <div class="col-xs-8 col-sm-8 col-md-8 colo-contact">
+                        <h3 class="text-B-U"> Proizvodnja Kalcita</h3>
+                        <p>Kontakt osoba:<span class="text-B-U"> Đuro Širham</span><br/>
+                        Broj GSM-a: <span class="gsm">(+385) 098 446429</span><br/>
+                        Marčan bb, 42207 Vinica<br/>
+                        tel: 042/722-130<br/>
+                        fax: 042/722-130<br/>
+                        </p>
+                    </div>
+                    
+                       <!-- <img class="img-responsive" src="pictures/logo-homepage.png" alt="Zagorje-Kamen: Proizvodnja Kalcita"/> -->
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-2 col-md-2">
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 colo-contact">
+                            <h3>Radno vrijeme:</h3>
+                            <h4 class="text-B-U">Ponedjeljak - Petak : 7:00 - 15:00</h4>
+                        </div>
+                    </div>
+                
+                <div class="row ">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        
+                        <div id="map"></div>
 
                     </div>
-                    </div>
+                </div>
+                
             </div>
 
 
 
 
         </div>
-
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGsct7LYQqMMgPw-LJM4S_khW2ev68y2Q&callback=initMap">
+            </script>
+        <!-- Maps JavaScript API
+        <script>
+                function initMap() {
+                var uluru = {lat: 46.332236, lng: 16.144392};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: uluru
+                });
+                var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+                });
+                }
+            </script>
+           
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGsct7LYQqMMgPw-LJM4S_khW2ev68y2Q&callback=initMap">
+            </script>
+            -->
     </body>
 </html>
 

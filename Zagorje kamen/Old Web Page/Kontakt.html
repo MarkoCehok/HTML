@@ -1,0 +1,81 @@
+<!DOCTIPE html>
+<html lang="hr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width= device-width, initial-scale= 1.0">
+        <meta name="description" content="Kontakt Osoba za prodaju Karbonatno-Kalcitnog kamena">
+        <meta name="author" content="Marko Cehok">
+        
+        <link href="main.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Audiowide|Hammersmith+One|Kumar+One" rel="stylesheet">
+        <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
+        
+        <title>Kontakt informacije i lokacija</title>
+        
+    </head>
+    <body>
+        <div class="all">
+            <header>
+                <div class="title">
+                    <img src="pictures/logo-homepage.png" alt="Company logo: Zagorje Tehnobeton Grupacija"/>
+                    <h1 class="page_title">ZAGORJE <span class="kamen">Kamen</span><span class="doo"> d.o.o.</span></h1>
+                    <h3>Proizvodnja kalcitno-karbonatnog zrna i brašna</h3>
+                </div>
+                
+            </header>
+            <div class="nav_bar">
+                    <ul>
+                        <li >
+                            <a href="index.html">O Nama</a>
+                        </li>
+                        <li>
+                            <a href="proizvodi.html">Proizvodi</a>
+                        </li>
+                        <!--
+                        <li>
+                            <a href="O_Nama.html">O Nama</a>
+                        </li>
+                        -->
+                        <li>
+                            <a class="current" href="Kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+             </div>
+             <div class="KontaktInfo">
+                 <h3> Proizvodnja Kalcita</h3>
+                 <p>Kontakt osoba:<span class="osoba"> Đuro Širham</span><br/>
+                 Broj GSM-a: <span class="gsm">098 446429</span><br/>
+                 Marčan Bb, 42207 Vinica<br/>
+                 tel: 042/722-130<br/>
+                 fax (1): 042/722-130<br/>
+                 </p>
+                
+                 
+             </div>
+             <!--<h3>My Google Maps Demo</h3>-->
+            <div id="map"></div>
+            <!-- Rest of the page-->
+             
+        </div>
+
+        <!-- Maps JavaScript API-->
+        <script>
+                function initMap() {
+                var uluru = {lat: 46.332236, lng: 16.144392};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: uluru
+                });
+                var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+                });
+                }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGsct7LYQqMMgPw-LJM4S_khW2ev68y2Q&callback=initMap">
+            </script>
+
+    </body>
+</html>
+
